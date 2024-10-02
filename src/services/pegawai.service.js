@@ -14,6 +14,10 @@ const getAllPensiun = () => {
   return http.get(`/${base}/pensiun`, { headers: authHeader() });
 };
 
+const getAllTubel = () => {
+  return http.get(`/${base}/tubel`, { headers: authHeader() });
+};
+
 const get = (uuid) => {
   return http.get(`/${base}/${uuid}`);
 };
@@ -34,6 +38,7 @@ const Service = {
   getAll,
   getAllAktif,
   getAllPensiun,
+  getAllTubel,
   get,
   create,
   update,

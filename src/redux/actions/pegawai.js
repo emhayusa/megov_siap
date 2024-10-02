@@ -61,6 +61,22 @@ export const retrieve_pensiun = () => async (dispatch) => {
   }
 };
 
+export const retrieve_tubel = () => async (dispatch) => {
+  try {
+    const res = await Service.getAllTubel();
+
+    dispatch({
+      type: RETRIEVE_PEGAWAI_SUCCESS,
+      payload: res.data,
+    });
+  } catch (err) {
+    if (err.response && err.response.status === 401) {
+      EventBus.dispatch("logout");
+    }
+    console.log(err);
+  }
+};
+
 export const create = (data) => async (dispatch) => {
   try {
     const res = await Service.create(data);

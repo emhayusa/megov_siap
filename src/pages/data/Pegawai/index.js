@@ -8,6 +8,7 @@ import Footer from "src/components/Footer";
 
 import DaftarTab from "./DaftarTab";
 import PensiunTab from "./PensiunTab";
+import TubelTab from "./TubelTab";
 
 const TabsWrapper = styled(Tabs)(
   () => `
@@ -23,6 +24,7 @@ function ManagementsPegawai() {
   const tabs = [
     { value: "aktif", label: "Aktif" },
     { value: "tidak_aktif", label: "Tidak Aktif" },
+    { value: "tubel", label: "Tugas Belajar" },
   ];
 
   const handleTabsChange = (event, value) => {
@@ -62,6 +64,7 @@ function ManagementsPegawai() {
           <Grid item xs={12}>
             {currentTab === "aktif" && <DaftarTab />}
             {currentTab === "tidak_aktif" && <PensiunTab />}
+            {currentTab === "tubel" && <TubelTab />}
           </Grid>
         </Grid>
       </Container>
