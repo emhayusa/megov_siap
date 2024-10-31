@@ -19,7 +19,7 @@ const TabsWrapper = styled(Tabs)(
 function ManagementsRiwayat_jabatan() {
   const [currentTab, setCurrentTab] = useState("daftar");
 
-  const tabs = [{ value: "daftar", label: "Daftar Riwayat_jabatan" }];
+  const tabs = [{ value: "daftar", label: "Daftar Riwayat Jabatan" }];
 
   const handleTabsChange = (event, value) => {
     setCurrentTab(value);
@@ -28,7 +28,7 @@ function ManagementsRiwayat_jabatan() {
   return (
     <>
       <Helmet>
-        <title>Managements - Riwayat_jabatan</title>
+        <title>Managements - Riwayat Jabatan</title>
       </Helmet>
       <PageTitleWrapper>
         <PageHeader />

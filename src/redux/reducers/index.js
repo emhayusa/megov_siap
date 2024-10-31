@@ -14,6 +14,9 @@ import role from "./role";
 import tipe_jabatan from "./tipe_jabatan";
 
 import wilayah from "./wilayah";
+import riwayat_jabatan from "./riwayat_jabatan";
+import riwayat_satminkal from "./riwayat_satminkal";
+import riwayat_pangkat from "./riwayat_pangkat";
 
 export default combineReducers({
   agama,
@@ -30,4 +33,7 @@ export default combineReducers({
   role,
   tipe_jabatan,
   wilayah,
+  riwayat_jabatan,
+  riwayat_satminkal,
+  riwayat_pangkat,
 });

@@ -34,7 +34,7 @@ function Riwayat_jabatanTab() {
   const [page, setPage] = useState(2);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [open, setOpen] = useState(false);
-  const label = "Riwayat_jabatan";
+  const label = "Riwayat Jabatan";
 
   const initialConfig = {
     data: null,

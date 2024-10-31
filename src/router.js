@@ -78,6 +78,9 @@ const Wilayah = Loader(lazy(() => import("src/pages/managements/Wilayah")));
 
 // Operasional
 const Pegawai = Loader(lazy(() => import("src/pages/data/Pegawai")));
+const RiwayatJabatan = Loader(lazy(() => import("src/pages/data/Riwayat_jabatan")));
+const RiwayatSatminkal = Loader(lazy(() => import("src/pages/data/Riwayat_satminkal")));
+const RiwayatPangkat = Loader(lazy(() => import("src/pages/data/Riwayat_pangkat")));
 
 const routes = [
   {
@@ -323,6 +326,18 @@ const routes = [
       {
         path: "pegawai",
         element: <Pegawai />,
+      },
+      {
+        path: "riwayat-jabatan",
+        element: <RiwayatJabatan />,
+      },
+      {
+        path: "riwayat-satminkal",
+        element: <RiwayatSatminkal />,
+      },
+      {
+        path: "riwayat-pangkat",
+        element: <RiwayatPangkat />,
       },
     ],
   },

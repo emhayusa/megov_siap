@@ -368,7 +368,7 @@ function SidebarMenu() {
                     disableRipple
                     component={RouterLink}
                     onClick={closeSidebar}
-                    to="/data/pangkat"
+                    to="/data/riwayat-jabatan"
                     startIcon={<TableChartTwoToneIcon />}
                   >
                     Riwayat Jabatan
@@ -385,7 +385,7 @@ function SidebarMenu() {
                     disableRipple
                     component={RouterLink}
                     onClick={closeSidebar}
-                    to="/data/pangkat"
+                    to="/data/riwayat-pangkat"
                     startIcon={<TableChartTwoToneIcon />}
                   >
                     Riwayat Pangkat
@@ -399,7 +399,7 @@ function SidebarMenu() {
                   disableRipple
                   //component={RouterLink}
                   //onClick={closeSidebar}
-                  to="/data/satminkal"
+                  to="/data/riwayat-satminkal"
                   startIcon={<TableChartTwoToneIcon />}
                 >
                   Riwayat Satminkal

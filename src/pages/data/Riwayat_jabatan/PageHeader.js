@@ -5,10 +5,10 @@ function PageHeader() {
     <Grid container justifyContent="space-between" alignItems="center">
       <Grid item>
         <Typography variant="h3" component="h3" gutterBottom>
-          Riwayat_jabatan
+          Riwayat Jabatan
         </Typography>
         <Typography variant="subtitle2">
-          Pengelolaan Daftar Riwayat_jabatan
+          Pengelolaan Daftar Riwayat Jabatan
         </Typography>
       </Grid>
     </Grid>
